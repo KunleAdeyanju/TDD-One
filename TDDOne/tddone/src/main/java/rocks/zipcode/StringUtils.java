@@ -15,11 +15,15 @@ public class StringUtils {
     
     public static String reverse(String str) {
         // Your implementation here
-        return null;
+        StringBuilder reverse = new StringBuilder(str);
+
+        return reverse.reverse().toString();
+
     }
     
     public static int countOccurrences(String str, char c) {
         // Your implementation here
+
         return 0;
     }
     
