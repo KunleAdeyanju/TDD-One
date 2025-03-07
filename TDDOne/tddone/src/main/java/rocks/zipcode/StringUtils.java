@@ -23,14 +23,38 @@ public class StringUtils {
     
     public static int countOccurrences(String str, char c) {
         // Your implementation here
+        char[] s = str.toCharArray();
+        int w = 0;
 
-        return 0;
+        for(int i = 0; i < s.length; i++){
+            if(s[i] == c){
+                w++;
+            }
+        }
+
+        return w;
     }
     
     public static boolean isPalindrome(String str) {
         // Your implementation here
         // Note: Ignoring case and non-alphanumeric characters
-        return false;
+        String s = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+
+
+        StringBuilder ogString = new StringBuilder();
+        StringBuilder reverseStringB = new StringBuilder();
+        for(int i = 0; i < str.length(); i++){
+            if(s.contains(String.valueOf(str.charAt(i)))){
+                reverseStringB.append(String.valueOf(str.charAt(i)));
+            }
+        }
+        String str2 = reverseStringB.toString().replaceAll(" ", "");
+        String r = reverse(reverseStringB.toString());
+
+        //System.out.println(str2 + "\n" + r);
+
+
+        return (str2.equalsIgnoreCase(r));
     }
 }
 
