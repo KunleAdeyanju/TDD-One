@@ -22,7 +22,18 @@ public class ShoppingCart {
     public void addItem(Item item) {
         items.add(item);
     }
-    
+
+    // Item newItem = new Item(...)
+    // sc.addItem(newItem)
+    // Item expected = s.getItem(sc.getItemCount()-1);
+    // assertequal)expected, newItem);
+
+
+    public Item getItem(int idx){
+        // kris added get item # back i think
+        return items.get(idx);
+    }
+
     public void removeItem(Item item) {
         items.remove(item);
     }

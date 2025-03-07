@@ -41,7 +41,7 @@ public class StringUtils {
         String s = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
 
-        StringBuilder ogString = new StringBuilder();
+        //ingBuilder ogString = new StringBuilder();
         StringBuilder reverseStringB = new StringBuilder();
         for(int i = 0; i < str.length(); i++){
             if(s.contains(String.valueOf(str.charAt(i)))){
